@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31808.319
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demmo_ApiPixIntegration", "Demmo_ApiPixIntegration\Demmo_ApiPixIntegration.csproj", "{69726418-F91E-49C4-B8DE-EAB35C287774}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E2A6FC32-730A-44D6-B425-03C73EAC1B37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69726418-F91E-49C4-B8DE-EAB35C287774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69726418-F91E-49C4-B8DE-EAB35C287774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69726418-F91E-49C4-B8DE-EAB35C287774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69726418-F91E-49C4-B8DE-EAB35C287774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A6FC32-730A-44D6-B425-03C73EAC1B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A6FC32-730A-44D6-B425-03C73EAC1B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A6FC32-730A-44D6-B425-03C73EAC1B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A6FC32-730A-44D6-B425-03C73EAC1B37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55916C94-78CC-4165-A87B-71499AC7C703}
+	EndGlobalSection
+EndGlobal

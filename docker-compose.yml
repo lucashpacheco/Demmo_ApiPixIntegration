@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  demmo_apipixintegration:
+    image: ${DOCKER_REGISTRY-}demmoapipixintegration
+    build:
+      context: .
+      dockerfile: Demmo_ApiPixIntegration/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: 'Production'
+      #ASPNETCORE_ENVIRONMENT: 'Development'
+      MongoDbSettings__ConnectionString: 'mongodb://admin:abc123!@demmoapipix.db'
+    depends_on:
+      - demmoapipix.db
+
+  demmoapipix.db:
+    image: 'mongo'
+    ports:
+      - '27017:27017'
+    container_name: ${DOCKER_REGISTRY-}mongo-api-pix
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: 'admin'
+      MONGO_INITDB_ROOT_PASSWORD: 'abc123!'
